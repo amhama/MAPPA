@@ -1,0 +1,377 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: fadein 0.5s forwards;
+   
+}
+body video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    background-size: cover;
+    object-fit: cover;
+}
+header {
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(17, 17, 17, 0.75);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+    padding: 5px;
+}
+
+header .rightlist{
+    position: relative;
+    display: flex;
+    margin-left: -200px;
+}
+
+header .rightlist img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 10px;
+    opacity: 0.6;
+    transition: ease-in-out all .2s ;
+}
+header .rightlist p{
+    padding: 10px 10px 10px 5px;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.703);
+}
+header ul {
+    display: flex;
+    
+}
+
+header ul li {
+    padding: 10px;
+    position: relative;
+}
+header ul li  a{
+    color: rgba(255, 255, 255, 0.703);
+text-decoration: none;
+transition: all .2s ease;
+}
+header .midlist{
+  
+    margin-left: -130px;
+}
+
+header ul li a:hover{
+    color: white;
+    text-shadow: -1px 4px 14px rgba(113,0,113,1);
+    padding:20px  0px 20px 0px ;
+}
+header ul .exp i{
+    font-size: 10px;
+    margin-left: 5px;
+}
+#arrow{
+    transition: all .2s ease-in-out;
+}
+header .leftlist .log{
+    text-decoration: none;
+    position: relative;
+    padding: 15px;
+margin-right: 10px;
+  background-color: rgb(113, 0, 43);
+  border-radius: 15px;
+  transition: all .3s ease-in-out;
+  
+}
+header .leftlist .log a{
+    
+    letter-spacing: 1px;
+}
+
+header .leftlist .log:hover{
+   
+    background-color: rgb(180, 0, 42);
+}
+header .leftlist .log a:hover{
+    color:white;
+}
+
+header .leftlist{
+    margin-left: -50px;
+
+}
+header .leftlist .download {
+    position: relative;
+    padding: 15px;
+    margin-left: 5px;
+    background-color:rgb(212, 212, 212);
+    border-radius: 15px;
+    transition: .3s all ease-in-out;
+}
+
+header .leftlist .download a {
+    color: rgb(42, 0, 25);
+    text-decoration: none; 
+    letter-spacing:1px;
+}
+
+header .leftlist .download:hover {
+    background-color:white;
+    
+}
+header .leftlist .download a:hover{
+    text-shadow: -1px 4px 14px rgb(17, 17, 17);
+}
+header .leftlist .sidelist{
+    padding: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+header .leftlist .sidelist i{
+    font-size: 35px;
+    cursor: pointer; 
+
+}
+header .leftlist .sidelist #sidelist{
+   left: 10px;
+   position: absolute;
+   visibility:hidden;
+}
+header .leftlist .sidelist #sidelistx{
+    display: none;
+}
+header .exp .sub_exp{
+    width: 200px;
+    height: 275px;
+position: absolute;
+flex-direction: column;
+background-color: rgba(17, 17, 17, 0.875);
+box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+top: 50px;
+left:1px;
+z-index: 1000; 
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+header .exp .sub_exp li{
+    padding: 25px 170px 25px 20px;
+   
+}
+header .exp .sub_exp li:hover{
+    background-color: rgba(15, 15, 15, 0.875);
+}
+header .midlist .exp:hover .sub_exp{
+    opacity: 1;
+    visibility: visible;
+}
+
+header .leftlist .sidelist .sub_sidelist{
+    position: absolute;
+    top: 56px;
+    width: 300px;
+    height:900px;
+    background-color: rgba(17, 17, 17, 0.75);
+right: -40px;
+display: flex;
+flex-direction: column;
+margin-right: -50px;
+visibility:hidden;
+box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+transform: translateX(450px);
+transition:  transform .2s ease-in-out;
+z-index: 100;
+}
+
+header .leftlist .sidelist .sub_sidelist  .menu{
+    padding: 20px 30px 20px 87.5px;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 600;
+    z-index: 2;
+}
+header .leftlist .sidelist .sub_sidelist li{
+    padding: 25px 25px 28px 25px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.703);
+}
+header .leftlist .sidelist .sub_sidelist li:hover{
+    background-color: rgba(17, 17, 17, 0.822);
+   
+}
+header .leftlist .sidelist .sub_sidelist .homex{
+    border-left: solid 5px  rgb(113, 0, 43); ;
+}
+
+section{
+    display:flex;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    justify-content: space-around;
+
+   
+}
+section article{
+    padding: 20px;
+    background-color: rgba(17, 17, 17, 0.75);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+    width: 600px;
+    height:300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+section article ul li {
+    padding: 20px;
+}
+section article .titlea{
+    padding-right: 1px ;
+    border-bottom:2px solid   rgba(255, 255, 255, 0.703); ;
+    font-size: 50px;
+color: rgb(255, 254, 254);
+text-shadow: 2px 0px 20px rgba(49, 49, 49, 0.75);
+font-weight: 600;
+}
+section article ul .desc{
+    font-size: 20px;
+    color: rgba(244, 244, 244, 0.703);
+}
+
+main {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    left: 45%;
+    top: 40%;
+   visibility: hidden;
+   z-index:0;
+   display:none;
+}
+main p {
+    color: white;
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 2px 0px 20px rgba(49, 49, 49, 0.75);
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    section video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height:100%;
+        z-index: -1;
+        background-size: cover;
+        object-fit: cover;
+    }
+    header {
+        height: 110px;
+    }
+
+    header .rightlist {
+        position: relative;
+     margin-right:-170px;
+      
+    }
+
+    header .rightlist p {
+        font-size: 30px;
+    }
+
+    header .rightlist img {
+        margin-right: -4px;
+        width: 35px;
+        height: 35px;
+    }
+
+    header .midlist {
+        display: none;
+       
+    }
+
+    header .leftlist .log,
+    header .leftlist .download {
+        display: none;
+    }
+
+    header .leftlist .sidelist #sidelist {
+        position: relative;
+       visibility: visible; /* More control over layout than visibility */
+        font-size: 40px;
+        left: 60px;
+        text-shadow: -1px 4px 14px rgba(113, 0, 113, 1);
+    }
+
+    
+
+    header .leftlist .sidelist .sub_sidelist {
+        position: absolute;
+        visibility: visible;
+        top: 90px;
+        z-index: 100;
+     }
+     section{
+        display: none;
+        
+     }
+     main {
+         position: relative;
+         height: 200px;
+         left: 8%;
+         top: 70%;
+         visibility: visible;
+         z-index: 0;
+         display: block;
+         opacity: 1;
+         transition: opacity 0.2s ease-in-out; 
+     }
+     main p {
+         z-index: 0;
+         padding:5px;
+         letter-spacing: 1px;
+         color: white;
+         position: relative;
+         font-size:50px;
+         font-weight: 600;
+         text-shadow: 2px 0px 20px rgba(0, 0, 0, 0.856);
+     
+     }
+     
+     
+ }
+ @keyframes fadein{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+ }
+    
+    
